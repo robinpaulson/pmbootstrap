@@ -1,11 +1,11 @@
-pkgname=device-lg-hammerhead
+pkgname=device-lg-bullhead
 pkgver=1
 pkgrel=8
-pkgdesc="Google Nexus 5"
+pkgdesc="Google Nexus 5X"
 url="https://github.com/postmarketOS"
 arch="noarch"
 license="MIT"
-depends="linux-lg-hammerhead linux-firmware mkbootimg"
+depends="linux-lg-bullhead linux-firmware mkbootimg"
 makedepends=""
 install=""
 subpackages=""
@@ -35,7 +35,7 @@ package() {
 		"$pkgdir"/etc/wifi/bcmdhd.cal
 }
 
-sha512sums="a03b28ce567afd4755ac1f496ab4b97d6e732dff2eba01532d1eb4870b9772c0e3768bebbcb660c43d9d1dd887a14b22a3d2321e18fd94289f5f45a0ff37c8f5  deviceinfo
+sha512sums="3ba364df254e93cddcc8dbe04047cb63b7b2f32e3b31e0544cc5af4cb569dbbe0637baf99596c1ea6ff487a4d3c76d789a2356a217b30deaf774b4821967dc4a  deviceinfo
 8590967fa10388a890fdfafdb1070b9ab22dc89e06a3a8834806c772191e3b67de7b914b0d68e5ddf581cee715cb90f3f24abcb8762c415ff328c6da23e55d52  initfs-hook.sh
 ee25f3d0377f027d108593eb7953b8db49d7f05a5c36a0c8ca7e7849d15e3c217bc1ac97d77a66e28d2db4b81c0f50b905639911276da40321d2b6cca7f797df  90-android-touch-dev.rules
 2f7cdf558a6bff56fd343d29a1ca6c27e75715bedfad661700dfcfb01acd1bdfcfecdfccf619f1e56c1e6331be146f8882a14d3a2cd33830e9d00bb6118971a3  profile.sh
