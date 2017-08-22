@@ -9,11 +9,6 @@ from setuptools.command.test import test as TestCommand
 from codecs import open
 from os import path
 
-here = path.abspath(path.dirname(__file__))
-
-with open(path.join(here, 'README.md'), encoding='utf-8') as f:
-    long_description = f.read()
-
 
 class PyTest(TestCommand):
     user_options = [('pytest-args=', 'a', 'Arguments to pass to pytest')]
@@ -29,9 +24,15 @@ class PyTest(TestCommand):
         sys.exit(errno)
 
 
+here = path.abspath(path.dirname(__file__))
 _version_re = re.compile(r'version\s+=\s+(.*)')
+
 with open(path.join(here, 'pmb/config/__init__.py'), 'rb') as f:
     version = str(ast.literal_eval(_version_re.search(f.read().decode('utf-8')).group(1)))
+
+with open(path.join(here, 'README.md'), encoding='utf-8') as f:
+    long_description = f.read()
+
 
 setup(
     name='pmbootstrap',
