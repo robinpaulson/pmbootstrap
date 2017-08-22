@@ -53,7 +53,7 @@ setup(
         'Programming Language :: Python :: 3.6',
     ],
     keywords='postmarketos pmbootstrap',
-    packages=find_packages(exclude=['aports', 'build', 'dist', 'keys', 'tests']),
+    packages=find_packages(exclude=['aports', 'keys', 'test']),
     tests_require=['pytest'],
     cmdclass = {'test': PyTest},
     entry_points={
