@@ -57,7 +57,7 @@ setup(
     keywords='postmarketos pmbootstrap',
     packages=find_packages(exclude=['aports', 'keys', 'test']),
     tests_require=['pytest'],
-    cmdclass = {'test': PyTest},
+    cmdclass={'test': PyTest},
     entry_points={
         'console_scripts': [
             'pmbootstrap=pmb:main',
