@@ -15,8 +15,8 @@ deviceinfo_flash_methods="heimdall-isorec"
 deviceinfo_arch="armhf"
 
 # Splash screen
-deviceinfo_screen_width="480"
-deviceinfo_screen_height="800"
+deviceinfo_screen_width="720"
+deviceinfo_screen_height="1280"
 
 # Heimdall related
 deviceinfo_flash_heimdall_partition_kernel="KERNEL"
